@@ -2,14 +2,58 @@ body {
 	margin: 0;
 }
 
-*:not(header, main) {
+*:not(nav, #form-container){
 	border: 1px solid;
 }
 
+nav {
+	position:absolute;
+	top: 0;
+	background-color: #1b5557;
+	width: 100%;
+	height: 40px;
+}
+
+#form-container {
+	position: absolute;
+	top: 42px;
+	width: 100%;
+	height: 620px;
+}
+
+#header-and-top-of-form-underlay{
+	border-color: pink;
+	position: relative;
+	top: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 300px;
+}
+
+#bottom-half-of-form-underlay {
+	position: relative;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	padding: 1em;
+	height: 300px;
+	border-color: red;
+}
+
+#input-card {
+	position: absolute;
+	height: 400px;
+	width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 .container {
-	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+	border-color: blue;
 	z-index: -1;
 }
 
@@ -18,22 +62,10 @@ nav {
 	z-index: -1;
 }
 
-header {
-	flex-grow: 10;
-}
-
-main {
-	flex-grow: 60;
-}
-
+/*
 footer {
-	flex-grow: 30;
-}
-
-#input-card {
 	position: absolute;
-	width: 75vw;
-	min-height: 6em;
-	align-self: center;
-	margin-top: 3.5em;
-}
+	bottom: 0;
+	height: 200px;
+	width: 100%;
+} */
